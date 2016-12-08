@@ -1,3 +1,6 @@
+# Ignore the local Jekyll site build
 _site
+
+# Ignore node module dependencies
 /node_modules/
 npm-debug.log
