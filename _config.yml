@@ -1,0 +1,26 @@
+baseurl: /liberated-elephant
+
+# Markdown config
+markdown: kramdown
+kramdown:
+  input: GFM
+
+name: Liberated Elephant
+
+exclude:
+- Gemfile
+- Gemfile.lock
+- README.md
+- LICENSE.md
+- CONTRIBUTING.md
+- ".sass-cache"
+- ".ruby-version"
+- vendor
+- node_modules
+
+permalink: pretty
+
+collections:
+  docs:
+    output: true
+    permalink: /

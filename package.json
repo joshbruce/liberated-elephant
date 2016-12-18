@@ -1,0 +1,28 @@
+
+{
+  "name": "le-site",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "src/js/start.js",
+  "scripts": {
+    "start": "bundle exec jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsa/sam-web-design-standards"
+  },
+  "author": "Liberated Elephant",
+  "dependencies": {
+    "font-awesome": "4.7.0",
+    "bourbon": "^4.2.7",
+    "bourbon-neat": "^1.8.0",
+    "normalize.css": "^3.0.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.9.1",
+    "run-sequence": "^1.1.5"
+  }
+}
