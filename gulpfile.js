@@ -10,12 +10,12 @@ gulp.task('default', [
 gulp.task('release', ['sass'], function() {
   var entryFile = '_presentation-assets/stylesheets/le-main.scss';
   gulp.src(entryFile)
-    // .pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(
-        sass({ outputStyle: 'expanded' })
+        sass({ outputStyle: 'compressed' })
             .on('error', sass.logError)
     )
-    // .pipe(sourcemaps.write('./maps'))
+    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('assets/presentation/css/'));
 });
 
