@@ -1,5 +1,5 @@
 baseurl: /liberated-elephant
-
+# baseurl: /
 # Markdown config
 markdown: kramdown
 kramdown:

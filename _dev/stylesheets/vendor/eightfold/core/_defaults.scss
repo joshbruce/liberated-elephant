@@ -1,0 +1,43 @@
+// Typography
+// Removing the !default from $em-base so we are not inheriting that 
+// value from Bourbon.
+$em-base:             10px;
+$base-font-size:      rem(17px) !default;
+$small-font-size:     rem(14px) !default;
+$lead-font-size:      rem(20px) !default;
+$title-font-size:     rem(52px) !default;
+$h1-font-size:        rem(40px) !default;
+$h2-font-size:        rem(30px) !default;
+$h3-font-size:        rem(20px) !default;
+$h4-font-size:        rem(17px) !default;
+$h5-font-size:        rem(15px) !default;
+$h6-font-size:        rem(13px) !default;
+$base-line-height:    1.5 !default;
+$heading-line-height: 1.3 !default;
+$lead-line-height:    1.7 !default;
+
+$font-sans:           'Open Sans', sans-serif;
+
+$font-normal:         100 !default;
+$font-bold:           700 !default;
+
+$font-color:          #000000;
+$font-color-light:    #555555;
+
+// Overriding max-width from Bourbon Neat.
+$max-width: 1000px !global;
+
+// Mobile First Breakpoints
+$small-screen:  481px !default;
+$medium-screen: 600px !default;
+$large-screen:  $max-width !default;
+
+// Grid column counts by screen size
+$grid-columns-small: 1 !default;
+$grid-columns-medium: 6 !default;
+$grid-columns-large: 12 !default;
+
+// @media single-keyword helpers
+$small: new-breakpoint(min-width $small-screen $grid-columns-small) !default;
+$medium: new-breakpoint(min-width $medium-screen $grid-columns-medium) !default;
+$large: new-breakpoint(min-width $large-screen $grid-columns-large) !default;

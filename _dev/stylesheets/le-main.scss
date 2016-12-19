@@ -1,3 +1,11 @@
 @import 'vendor/bourbon/bourbon';
 @import 'vendor/bourbon-neat/neat';
 @import 'vendor/normalize.css/normalize';
+
+@import 'vendor/eightfold/all';
+
+header {
+  nav {
+    @include outer-container;
+  }
+}
