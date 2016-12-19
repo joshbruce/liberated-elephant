@@ -1,0 +1,20 @@
+dt:before {
+  margin-top: 1em;
+  content: "";
+  display: block;
+}
+
+dt:after {
+  content: ":";
+}
+
+dt, 
+dd {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+dt {
+  font-weight: bold;
+}

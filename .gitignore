@@ -6,4 +6,6 @@ _site
 npm-debug.log
 
 # Ignore vendor files in presentation-assets
-_presentation-assets/stylesheets/vendor
+_dev/stylesheets/vendor/bourbon
+_dev/stylesheets/vendor/bourbon-neat
+_dev/stylesheets/vendor/normalize.css
