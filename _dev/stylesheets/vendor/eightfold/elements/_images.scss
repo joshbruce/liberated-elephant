@@ -1,0 +1,7 @@
+img {
+  @include border-radius($border-radius);
+  &.responsive {
+    width: 100%;
+    height: auto;
+  }
+}

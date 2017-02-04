@@ -4,8 +4,4 @@
 
 @import 'vendor/eightfold/all';
 
-header {
-  nav {
-    @include outer-container;
-  }
-}
+@import 'components/header';

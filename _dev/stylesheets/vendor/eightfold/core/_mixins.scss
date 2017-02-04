@@ -3,3 +3,13 @@
     @content;
   }
 }
+
+@mixin border-radius($radius: 5px) {
+  &.rounded {
+    border-radius: $radius;
+  }
+
+  &.circle {
+    border-radius: 50%;
+  }
+}

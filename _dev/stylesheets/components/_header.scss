@@ -1,0 +1,13 @@
+#header-primary {
+  nav {
+    @include outer-container;
+  }
+
+  li:nth-of-type(1) > a {
+    display: inline-block;
+    padding: 10px;
+    background-color: yellow;
+    @include background-image(url('../img/logo.png'));
+    @include background-image(url('../img/logo.svg'));
+  }
+}
