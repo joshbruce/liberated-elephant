@@ -69,7 +69,7 @@ gulp.task('serve', ['build'], function() {
 });
 
 gulp.task('build', function(cb) {
-  runSequence(['build:sass', 'build:javascript', 'build:images'], 'build:jekyll', cb);
+  runSequence(['build:sass', 'build:javascript', 'build:images', 'build:fonts'], 'build:jekyll', cb);
 });
 
 gulp.task('build:javascript', function() {
@@ -97,6 +97,11 @@ gulp.task('build:jekyll:watch', ['build:jekyll'], function(cb) {
 gulp.task('build:images', function() {
   return gulp.src('_dev/img/**/*')
       .pipe(gulp.dest('assets/presentation/img'));
+});
+
+gulp.task('build:fonts', function() {
+  return gulp.src('node_modules/font-awesome/fonts/**/*')
+    .pipe(gulp.dest('assets/presentation/fonts'));
 });
 
 // Sass
