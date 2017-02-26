@@ -1,0 +1,9 @@
+// Screen reader only helper
+@mixin sr-only() {
+  position: absolute;
+  left: -999em;
+}
+
+.ef-sr_only {
+  @include sr-only();
+}

@@ -1,0 +1,35 @@
+article {
+  @include outer-container;
+  color: $font-color-light;
+  font-size: $base-font-size;
+  font-family: $font-sans;
+  line-height: $base-line-height;
+
+  padding-top: 12.5rem;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.5rem;
+    color: $font-color;
+    font-weight: $font-bold;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  p,
+  dd {
+    margin-top: 0.5rem;
+    font-weight: $font-normal;
+  }
+
+  dt {
+    color: $font-color;
+    font-weight: $font-bold;
+  }
+}

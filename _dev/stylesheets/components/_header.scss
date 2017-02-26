@@ -1,9 +1,24 @@
 $home-link-height: 100px;
 
 #header-primary {
+  // background-color: green;
+  // position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+
+  span {
+    @include sr-only();
+  }
 
   nav {
     @include outer-container;
+    font-size: 1.5rem;
+
   }
 
   & ul {
@@ -12,7 +27,7 @@ $home-link-height: 100px;
     justify-content: center;    
     list-style-type: none;
     width: 40rem;
-    background-color: purple;
+    // @include sr-only();
 
     & li:nth-of-type(1),
     & li:nth-of-type(2) {
@@ -21,16 +36,46 @@ $home-link-height: 100px;
 
     & a {
       display: inline-block;
-      padding: 5rem 2rem;
+      margin: 4rem 1rem;
+      text-align: center;
+      text-decoration: none;
+
+      &:hover {
+        color: #514F5A;
+      }
+      
+      &.circle {
+        margin-top: 3rem;
+        padding-top: 0.9rem;
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 1.75rem;
+        background-color: #522B7F;
+        color: #ffffff;
+        &:hover {
+          background-color: #514F5A;
+          color: #ffffff;
+        }
+
+        .fa-facebook-official,
+        .fa-linkedin-square {
+          font-size: 1.75rem;
+
+        }
+      }
     }
   }
 
   [href^='#home'] {
-    background-color: yellow;
+    // @include sr-only();
+    margin: 0;
+    padding: 5rem 2rem;
+    width: 8rem;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: $home-link-height auto;
     @include background-image(url('../img/logo.png'));
     @include background-image(url('../img/logo.svg'));
+
   }
 }

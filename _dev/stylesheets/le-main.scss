@@ -3,6 +3,15 @@
 @import 'vendor/normalize.css/normalize';
 @import 'vendor/font-awesome/font-awesome';
 
-@import 'vendor/eightfold/all';
+// @import 'vendor/eightfold/all';
+@import 'core/defaults';
+@import 'vendor/eightfold/core/mixins';
+
+@import 'elements/article';
+@import 'vendor/eightfold/elements/definition-list';
+@import 'vendor/eightfold/elements/footer';
+@import 'vendor/eightfold/elements/images';
+
+@import 'core/utilities';
 
 @import 'components/header';
