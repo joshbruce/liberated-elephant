@@ -1,8 +1,9 @@
-$home-link-height: 100px;
+$link-height: 10rem;
+$small-link-height: 5rem;
+$home-link-background-height: 6rem;
+$small-home-link-background-height: 3rem;
 
 #header-primary {
-  // background-color: green;
-  // position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
   position: fixed;
   width: 100%;
@@ -11,71 +12,90 @@ $home-link-height: 100px;
   -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
   box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
 
-  span {
-    @include sr-only();
-  }
-
+  // set margins to center navigation
   nav {
     @include outer-container;
     font-size: 1.5rem;
-
   }
 
-  & ul {
+  ul {
     margin: 0 auto;
+    // establish flex-box container
     display: flex;
-    justify-content: center;    
+    // center the links
+    justify-content: center;
+    // remove bullets
     list-style-type: none;
     width: 40rem;
-    // @include sr-only();
+  }
 
-    & li:nth-of-type(1),
-    & li:nth-of-type(2) {
-      // flex: 1 1 auto;
+  li:nth-of-type(1),
+  li:nth-of-type(2) {
+    flex: 1 1 auto;
+  }
+
+  // enclose icons with circles
+  .circle {
+    display: inline-block;
+    padding-top: 0.9rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 1.75rem;
+    background-color: #522B7F;
+    color: #ffffff;
+    &:hover {
+      background-color: #514F5A;
+      color: #ffffff;
     }
 
-    & a {
-      display: inline-block;
-      margin: 4rem 1rem;
-      text-align: center;
-      text-decoration: none;
+    // the facebook icon needs a little help
+    .fa-facebook-official,
+    .fa-linkedin-square {
+      font-size: 1.75rem;
+    }
+  }
 
-      &:hover {
-        color: #514F5A;
-      }
-      
-      &.circle {
-        margin-top: 3rem;
-        padding-top: 0.9rem;
-        height: 3.5rem;
-        width: 3.5rem;
-        border-radius: 1.75rem;
-        background-color: #522B7F;
-        color: #ffffff;
-        &:hover {
-          background-color: #514F5A;
-          color: #ffffff;
-        }
-
-        .fa-facebook-official,
-        .fa-linkedin-square {
-          font-size: 1.75rem;
-
-        }
-      }
+  a {
+    margin: 0 1rem;
+    display: inline-block;
+    height: $link-height;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;    
+    &:hover {
+      color: #514F5A;
     }
   }
 
   [href^='#home'] {
-    // @include sr-only();
-    margin: 0;
-    padding: 5rem 2rem;
     width: 8rem;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: $home-link-height auto;
+    background-size: $home-link-background-height auto;
     @include background-image(url('../img/logo.png'));
     @include background-image(url('../img/logo.svg'));
-
+    -webkit-transition: background-size 0.3s;
+    -moz-transition: background-size 0.3s;
+    -ms-transition: background-size 0.3s;
+    -o-transition: background-size 0.3s;
+    transition: background-size 0.3s;    
   }
+}
+
+#header-primary.smaller {
+  a {
+    height: $small-link-height;
+  }
+
+  [href^='#home'] {
+    background-size: $small-home-link-background-height auto;
+  }  
 }
