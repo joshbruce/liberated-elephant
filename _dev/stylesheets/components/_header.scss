@@ -65,11 +65,12 @@ $small-home-link-background-height: 3rem;
     text-align: center;
     justify-content: center;
     text-decoration: none;
+    color: #522B7F;
     -webkit-transition: height 0.3s;
     -moz-transition: height 0.3s;
     -ms-transition: height 0.3s;
     -o-transition: height 0.3s;
-    transition: height 0.3s;    
+    transition: height 0.3s;
     &:hover {
       color: #514F5A;
     }
