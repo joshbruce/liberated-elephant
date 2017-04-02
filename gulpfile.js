@@ -5,6 +5,11 @@ const gutil = require('gulp-util');
 const sourcemaps = require('gulp-sourcemaps');
 const runSequence = require('run-sequence');
 const browserSync = require('browser-sync');
+const browserify = require('browserify');
+const uglify = require('gulp-uglify');
+const rename = require('gulp-rename');
+const buffer = require('vinyl-buffer');
+const source = require('vinyl-source-stream');
 
 const paths = {
   jekyllDir: '',
@@ -73,7 +78,28 @@ gulp.task('build', function(cb) {
 });
 
 gulp.task('build:javascript', function() {
-  return;
+  var defaultStream = browserify({
+    entries: '_dev/js/start.js',
+    debug: true,
+  });
+
+  var stream = defaultStream.bundle()
+    .pipe(source('components.js'))
+    .pipe(buffer())
+    .pipe(rename({ basename: 'le' }))
+    .pipe(gulp.dest('assets/presentation/js'));
+
+  stream
+    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(uglify())
+    .on('error', gutil.log)
+    .pipe(rename({
+      suffix: '.min',
+    }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('assets/presentation/js'));
+
+  return stream;
 });
 
 gulp.task('build:javascript:watch', ['build:javascript'], function(cb) {
