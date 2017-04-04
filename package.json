@@ -6,7 +6,7 @@
   "main": "src/js/start.js",
   "scripts": {
     "start": "gulp serve",
-    "build": "gulp build"
+    "build": "gulp build gulp build:jekyll"
   },
   "repository": {
     "type": "git",
