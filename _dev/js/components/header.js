@@ -1,17 +1,18 @@
-function headerResize() {
-    window.addEventListener('scroll', function(e){
-      var header = document.getElementById("header-primary");
-      // console.log(header);
-      var distanceY = window.pageYOffset;
-      var shrinkOn = 300
-      if (distanceY > shrinkOn) {
-          header.classList.add('smaller');
+function HeaderResize() {
+  window.addEventListener('scroll', function(e){
+    console.log('scrolling');
+    var header = document.getElementById("header-primary");
+    // console.log(header);
+    var distanceY = window.pageYOffset;
+    var shrinkOn = 300
+    if (distanceY > shrinkOn) {
+        header.classList.add('smaller');
 
-      } else {
-          header.classList.remove('smaller');
+    } else {
+        header.classList.remove('smaller');
 
-      }
-    });
+    }
+  }, true);
 }
 
-window.onload = headerResize;
+module.exports = HeaderResize;

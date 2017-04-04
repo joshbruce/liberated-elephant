@@ -1,3 +1,7 @@
 'use strict';
 
-require('./components/header.js');
+require('smoothscroll-polyfill').polyfill();
+
+require('./initializers/header.js');
+require('./initializers/scrolling.js');
+
