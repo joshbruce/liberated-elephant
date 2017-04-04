@@ -5,11 +5,12 @@
   "private": true,
   "main": "src/js/start.js",
   "scripts": {
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gsa/sam-web-design-standards"
+    "url": "git+https://github.com/jeskatz/liberated-elephant"
   },
   "author": "Liberated Elephant",
   "dependencies": {
