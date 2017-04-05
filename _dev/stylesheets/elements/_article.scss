@@ -32,6 +32,17 @@ article {
     color: $font-color;
     font-weight: $font-bold;
   }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    // border-bottom: 1px dashed #522B7F;
+    background-color: #522B7F;
+    padding: 3px 5px;
+    &:hover {
+      background-color: #514F5A;
+    }
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 700px) {

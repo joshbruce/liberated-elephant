@@ -1,6 +1,5 @@
 function HeaderResize() {
   window.addEventListener('scroll', function(e){
-    console.log('scrolling');
     var header = document.getElementById("header-primary");
     // console.log(header);
     var distanceY = window.pageYOffset;

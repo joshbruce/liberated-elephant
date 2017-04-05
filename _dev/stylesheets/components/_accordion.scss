@@ -1,0 +1,32 @@
+.ef-accordion-container {
+  overflow: hidden;
+
+  button {
+    padding: 1em 0;
+    width: 100%;
+    background-color: #522B7F;
+    color: #ffffff;
+    appearance: none;
+    box-shadow: none;
+    border: none;
+
+    &:hover {
+      background-color: #514F5A;
+    }
+  }
+
+  .ef-accordion-content {
+    display: block;
+    // position: relative;
+    // top: 0;
+    // -webkit-transition: top 0.3s;
+    // -moz-transition: top 0.3s;
+    // -ms-transition: top 0.3s;
+    // -o-transition: top 0.3s;
+    // transition: top 0.3s;
+  }
+
+  .ef-accordion-content.collapsed {
+    display: none;
+  }
+}
