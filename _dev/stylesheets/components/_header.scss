@@ -102,11 +102,12 @@ $small-home-link-background-height: 3rem;
       display: none;
     }    
     a {
-      margin: 0 0.5rem;
+      height: $small-link-height;
     }
+
     [href^='#home'] {
-      width: 7rem;
-      background-size: ($home-link-background-height - 1rem) auto;
+      width: 4rem;
+      background-size: $small-home-link-background-height auto;
     }    
   }
 }
