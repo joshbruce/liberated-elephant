@@ -1,12 +1,14 @@
+
+
 @import 'vendor/bourbon/bourbon';
 @import 'vendor/bourbon-neat/neat';
 @import 'vendor/normalize.css/normalize';
 @import 'vendor/font-awesome/font-awesome';
 
 // @import 'vendor/eightfold/all';
-@import 'core/defaults';
-@import 'vendor/eightfold/core/mixins';
 
+@import 'vendor/eightfold/core/mixins';
+@import 'core/defaults';
 @import 'elements/article';
 @import 'vendor/eightfold/elements/definition-list';
 @import 'vendor/eightfold/elements/footer';

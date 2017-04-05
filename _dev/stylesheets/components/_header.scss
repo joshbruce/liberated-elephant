@@ -24,14 +24,8 @@ $small-home-link-background-height: 3rem;
     display: flex;
     // center the links
     justify-content: center;
-    // remove bullets
     list-style-type: none;
-    width: 40rem;
-  }
-
-  li:nth-of-type(1),
-  li:nth-of-type(2) {
-    flex: 1 1 auto;
+    width: 100%;
   }
 
   // enclose icons with circles
@@ -100,3 +94,13 @@ $small-home-link-background-height: 3rem;
     background-size: $small-home-link-background-height auto;
   }  
 }
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  #header-primary {
+    li:nth-of-type(1),
+    li:nth-of-type(2) {
+      display: none;
+    }    
+  }
+}
+

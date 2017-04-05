@@ -33,3 +33,27 @@ article {
     font-weight: $font-bold;
   }
 }
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  article {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: $lead-font-size;
+  }
+
+  p,
+  dd,
+  dt,
+  ul {
+    font-size: $small-font-size;
+  }
+}
