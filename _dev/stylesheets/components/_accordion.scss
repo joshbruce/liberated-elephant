@@ -2,7 +2,7 @@
   overflow: hidden;
 
   button {
-    padding: 1em 0;
+    // padding: 1em 0;
     width: 100%;
     background-color: #522B7F;
     color: #ffffff;
@@ -17,13 +17,6 @@
 
   .ef-accordion-content {
     display: block;
-    // position: relative;
-    // top: 0;
-    // -webkit-transition: top 0.3s;
-    // -moz-transition: top 0.3s;
-    // -ms-transition: top 0.3s;
-    // -o-transition: top 0.3s;
-    // transition: top 0.3s;
   }
 
   .ef-accordion-content.collapsed {

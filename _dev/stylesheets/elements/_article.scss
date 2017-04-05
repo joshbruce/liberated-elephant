@@ -34,13 +34,13 @@ article {
   }
 
   a {
-    color: #ffffff;
+    color: #522B7F;
     text-decoration: none;
-    // border-bottom: 1px dashed #522B7F;
-    background-color: #522B7F;
-    padding: 3px 5px;
+    border-bottom: 2px dashed #522B7F;
+    // background-color: #522B7F;
+    // padding: 3px 5px;
     &:hover {
-      background-color: #514F5A;
+      // background-color: #514F5A;
     }
   }
 }
