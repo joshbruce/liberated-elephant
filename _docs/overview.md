@@ -20,7 +20,7 @@ Jessica Katz is a trainer, mentor and coach helping people find and nurture thei
       <dt>Liberate the Elephants</dt>
       <dd>Elephants in the room have important things to share and reflect about us and the system(s) we’re in. Acknowledging them and talking about them fearlessly can liberate them from their confines and make it possible to maximize the strengths in the individual or system.</dd>
       <dt>Embrace the Power of “And”</dt>
-      <dd>It is easy to see only two options, thus limiting ourselves to this OR that. The spirit of this principle is to ask, “Why not both,?” “What if,?” and “What else?.” It is in these questions that the client’s creative vision can find life and open new doors.</dd>
+      <dd>It is easy to see only two options, thus limiting ourselves to this OR that. The spirit of this principle is to ask, “Why not both?”, “What if?”, and “What else?”. It is in these questions that the client’s creative vision can find life and open new doors.</dd>
       <dt>Active Seeing</dt>
       <dd>There is power in seeing and being seen.  To this end I vulnerably bring my whole self to my coach session.  My intention is to make it possible for the client to bring their whole self and in so doing reach new possibilities within.</dd>
     </dl>
