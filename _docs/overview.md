@@ -7,7 +7,7 @@ title: Liberated Elephant
 <article markdown="1">
 <h1 id="home">{{ page.title }}</h1>
 
-Jessica Katz is a trainer, mentor and coach helping people find and nurture their authentic selves. Through Liberated Elephant, Jessica works with individuals and teams to help them dig deep into self-discovery, and with their new knowledge, helps them find the solutions hidden within their subconscious. Her methodology is informed by Agile project management, creating a safe space for her clients to bring their full selves without judgement, and these five core principles. <link to overview or another page here>
+Jessica Katz is a trainer, mentor and coach helping people find and nurture their authentic selves. Through Liberated Elephant, Jessica works with individuals and teams to help them dig deep into self-discovery, and with their new knowledge, helps them find the solutions hidden within their subconscious. Her methodology is informed by Agile project management, creating a safe space for her clients to bring their full selves without judgement.
 
 <div class="ef-accordion-container">
   <button>Click to see the five core principles that guide Jessica's coaching&hellip;</button>
